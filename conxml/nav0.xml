@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<navigation>
+	<nav>
+		<name>
+			<name>dashboard</name>
+			<label>Dashboard</label>
+			<active>1</active>
+			<securityval>0</securityval>
+			<topnav></topnav>
+			<url>home</url>
+		</name>
+	</nav>
+	<nav>
+		<name>
+			<name>account</name>
+			<label>Account</label>
+			<active>1</active>
+			<securityval>0</securityval>
+			<topnav></topnav>
+			<url>account</url>
+		</name>
+	</nav>
+	<nav>
+		<name>
+			<name>journal</name>
+			<label>Journal Book</label>
+			<active>1</active>
+			<securityval>0</securityval>
+			<topnav>account</topnav>
+			<url>journal</url>
+		</name>
+	</nav>
+</navigation>
