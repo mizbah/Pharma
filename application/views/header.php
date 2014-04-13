@@ -60,13 +60,13 @@
     <?php require_once 'top-nav.php'; ?>
 	
     <div class="container-fluid">
-      <div class="row-fluid">
+      <div class="row" style="margin-top: 15px;">
       <?php //var_dump (!isset($ctrl_nav['child']));?>
       	<?php if (isset($ctrl_nav['child']) && empty($ctrl_nav['child'])){ 
-	        echo '<div class="span12">';
+	        echo '<div class="col-xs-11">';
 	     }else{ 
-	    	echo '<div class="span3">';
+	    	echo '<div class="col-xs-3">';
 	        require_once 'side-nav.php'; 
 	       echo '</div><!--/span-->
-	        <div class="span9">';
+	        <div class="col-xs-9">';
     	}?>
