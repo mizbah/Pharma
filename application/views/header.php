@@ -17,11 +17,20 @@
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <?php if(isset($extracss) && is_array($extracss)) {
-    	foreach ($extracss as $k=>$v) {
-			echo '<link href="assets/css/'.$v.'" rel="stylesheet">';
-		}
-    }?>
+    <?php 
+    	if(isset($extracss) && is_array($extracss)) {
+	    	foreach ($extracss as $k=>$v) {
+				echo '<link href="assets/css/'.$v.'" rel="stylesheet">';
+			}
+    	}
+    	require_once 'js.php';
+    	if(isset($extrajs) && is_array($extrajs)){
+    		foreach ($extrajs as $k=>$v) {
+    			echo '<script src="../assets/js/'.$v.'"></script>';
+    		}
+    			
+    	}
+    ?>
 <!--     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
     <!-- Latest compiled and minified JavaScript -->
 <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->

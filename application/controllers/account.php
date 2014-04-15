@@ -15,7 +15,7 @@ class Account extends CI_Controller {
 		$this->load->model('account_model');
 		$this->data['accounts'] = $this->account_model->getTransaction();
 		
-		$this->data['extrajs'] = array('accounts.js');
+		$this->data['extrajs'] = array('jquery.dataTables.min.js','accounts.js');
 		$this->data['extracss'] = array('jquery.dataTables.css');
 	}
 }

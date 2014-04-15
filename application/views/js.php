@@ -1,4 +1,4 @@
- <script src="assets/js/jquery.min-1.11.0.js"></script>
+ <script src="assets/js/jquery-1.11.0.min.js"></script>
  
  <!-- 
  	<script src="../assets/js/bootstrap-transition.js"></script>
