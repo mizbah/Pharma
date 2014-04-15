@@ -3,6 +3,7 @@
 		<label for="account_name">Account</label>
 	</div>
 	<div class='col-md-8'> 
+		<?php var_dump($account);?>
 		<select id="account_name">
 			<option >add new</option>
 			<option>MD Sir</option>

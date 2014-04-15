@@ -7,7 +7,14 @@ class Journal extends CI_Controller {
 	}
 	
 	public function index(){
+		$this->populateDataforView();
 		$this->load->view('journal_view', $this->data);
+	}
+	private function populateDataforView(){
+		$this->load->model('Account_Model');
+	
+		$this->data['account'] = $this->Account_Model->getAccounts();
+	
 	}
 	
 	
