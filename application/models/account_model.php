@@ -24,6 +24,7 @@ class Account_Model extends CI_Model {
 	public function getTransaction(){
 		$this->db->select_sum('journal.amount');
 		$this->db->select('account.name');
+		$this->db->select('account.id');
 		$this->db->select('journal.type');
 		$this->db->from('journal');
 		$this->db->join('account', 'journal.acc_id = account.id');

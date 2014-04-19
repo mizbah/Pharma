@@ -13,7 +13,7 @@
 				foreach ($accounts as $k=>$v){
 					echo '
 						<tr>
-							<td>'.$v->name.'</td>
+							<td> <a href="javascript:accountsInformation('.$v->id.')" >'.$v->name.'</a></td>
 							<td>'.$v->amount.'</td>
 							<td>'.$v->type.'</td>
 						</tr>';
@@ -24,6 +24,6 @@
          
         </div><!--/span-->
       </div><!--/row-->
-
+		<div id="popup"></div>
       <hr>
 	<?php require_once 'footer.php';?>
