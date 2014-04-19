@@ -28,7 +28,7 @@
  * By default development will show errors but testing and live will hide them.
  */
 
-	// test
+	// test1
 if (defined('ENVIRONMENT'))
 {
 	switch (ENVIRONMENT)
